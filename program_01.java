@@ -3,7 +3,7 @@
 
 // import javax.naming.ldap.Rdn;
 
-// public class program {
+// public class program_01 {
 
 //     public static void main(String[] args) {
 //         System.out.println("Hello world");
@@ -11,9 +11,9 @@
 // }
 
 
-//____________________Создание переменной___________________________
+// ____________________Создание переменной___________________________
 
-// public class program {
+// public class program_01 {
 
 //     public static void main(String[] args) {
 //         String s ="123333";
@@ -23,7 +23,7 @@
 
 // ____________________Типы данных________________________________
 
-// class program
+// class program_01
 // {
 //   public static void main(String[] args) {
 //       float e = 2.7f;
@@ -39,9 +39,9 @@
 //   }
 // }
 
-//_______________________Тип данных Char_________________________
+// _______________________Тип данных Char_________________________
 
-// class program
+// class program_01
 // {
 //   public static void main(String[] args) {
 //       char ch = '1';
@@ -50,9 +50,9 @@
 //       System.out.println(Character.isDigit(ch));  // false
 //   }
 // }
- //___________________Тип boolean___________________________
+//  ___________________Тип boolean___________________________
 
-//  public class program {
+//  public class program_01 {
 //     public static void main(String[] args) {
 //         boolean flag1 = 123 <= 234;
 //         System.out.println(flag1);  // true
@@ -63,8 +63,8 @@
 //     }
 // }
 
-//_____________________________________________________________
-// public class program {
+// _____________________________________________________________
+// public class program_01 {
 
 //     public static void main(String[] args) {
 //         boolean f = true ^ false;
@@ -74,7 +74,7 @@
 
 // ___________________Неявная типизация_____________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         var a = 789;
 //         System.out.println(a);  // 789
@@ -83,9 +83,9 @@
 //     }
 // }
 
-//___________________________________________________________________
+// ___________________________________________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         var a = 123;
 //         System.out.println(a);  // 123
@@ -104,9 +104,9 @@
 //     }
 // }
 
-//_____________________Классы-обертки_________________________
+// _____________________Классы-обертки_________________________
 
-// public class program
+// public class program_01
 // {
 //   public static void main(String[] args) {
 //       System.out.println(Integer.SIZE); // 32
@@ -114,10 +114,10 @@
 //   }
 // }
 
-//______________________Операции Java______________________
+// ______________________Операции Java______________________
 
 
-// public class program {
+// public class program_01 {
 
 //     public static void main(String[] args) {
 //         double a = 1;
@@ -129,7 +129,7 @@
 // ________________________Инкремент и дискремент____________________________
 
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int a =225;
 //         System.out.println(a++);
@@ -140,10 +140,10 @@
     
 // }
 
-//_____________________________Задача от интервьюера_______________________________
+// _____________________________Задача от интервьюера_______________________________
 
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int a = 125;
 //         a= --a - --a;
@@ -152,9 +152,9 @@
     
 // }
 
-//______________________________Побитовые операции (побитовые сдвиги)___________________________
+// ______________________________Побитовые операции (побитовые сдвиги)___________________________
 
-// public class program {
+// public class program_01 {
 
 //     public static void main(String[] args) {
 //         int a = 4;
@@ -162,9 +162,9 @@
 //     }
 // }
 
-//________________________________Побитовые операции (и , или , разделительная дезъюнкция)
+// ________________________________Побитовые операции (и , или , разделительная дезъюнкция)
 
-// public class program {
+// public class program_01 {
 
 //     public static void main(String[] args) {
 //         int a=5;
@@ -176,9 +176,9 @@
 
 
 
-//_________________________________Массивы одномерные________________________________________
+// _________________________________Массивы одномерные________________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 
 //         int[] arr = new int[10];
@@ -188,9 +188,9 @@
 //         System.out.println(arr[1]); // 2
 //     }
 // }
-//________________________________Многомерные массивы__________________________________
+// ________________________________Многомерные массивы__________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 
 //         int[] arr[] = new int[3][5];
@@ -204,7 +204,7 @@
 // }
 // ____________________________Многомерные массивы или массивы массивов
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 
 //         int[][] arr = new int[10][5];//[строки] [колонки]
@@ -217,9 +217,9 @@
 //         }
 //     }
 // }
-//____________________________Преобразование___________________
+// ____________________________Преобразование___________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int i = 123; double d = i;
 //         System.out.println(i);  // 123
@@ -237,11 +237,11 @@
 //     }
 //  }
  
- //____________________________Получение данных из терминала_____________________________________
+//  ____________________________Получение данных из терминала_____________________________________
 // Строки_________________________________________________
 
 // import java.util.Scanner;
-// public class program {
+// public class program_01 {
 //    public static void main(String[] args) {
 //        Scanner iScanner = new Scanner(System.in);
 //        System.out.printf("name: ");
@@ -250,10 +250,10 @@
 //        iScanner.close();
 //    }
 // }
-//Примитивные типы данных_______________________________________
+// Примитивные типы данных_______________________________________
 
 // import java.util.Scanner;
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         Scanner iScanner = new Scanner(System.in);
 //         System.out.printf("int a: ");
@@ -264,10 +264,10 @@
 //         iScanner.close();
 // }}
 
-//Если не валидные данные__________________________________
+// Если не валидные данные__________________________________
 
 // import java.util.Scanner;
-// public class program {
+// public class program_01 {
 //    public static void main(String[] args) {
 //        Scanner iScanner = new Scanner(System.in);
 //        System.out.printf("int a: ");
@@ -282,7 +282,7 @@
 // ___________________________Форматированный вывод___________________________
 // первый способ______________________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int a = 1, b = 2;
 //         int c = a + b;
@@ -293,7 +293,7 @@
 
 // второй  способ__________________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int a = 1, b = 2;
 //         int c = a + b;
@@ -305,7 +305,7 @@
 
 // ____________________________Количество знаков после запятой__________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
        
 //         float pi = 3.1415f;
@@ -318,9 +318,9 @@
 //     }
 // }
 
-//_____________________Область видимости переменных____________________
+// _____________________Область видимости переменных____________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         {
 //             int i = 123;
@@ -330,9 +330,9 @@
 //     }
 //  }
 
-//____________________Функции и методы_________________
+// ____________________Функции и методы_________________
 
-// public class program {
+// public class program_01 {
 //     static void sayHi() {
 //         System.out.println("hi!");
 //     }
@@ -350,11 +350,11 @@
 //     }}
 
 
- //___________________Управляющие конструкции_________________
+//  ___________________Управляющие конструкции_________________
 
- //Оператор ветвления If else________________________________
+//  Оператор ветвления If else________________________________
 
-//  public class program {
+//  public class program_01 {
 //     public static void main(String[] args) {
 //         int a = 1;
 //         int b = 2;
@@ -369,7 +369,7 @@
 // }
 // можно без else__________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int a = 19;
 //         int b = 8;
@@ -381,9 +381,9 @@
 //     }
 // }
 
-//тернарный оператор____________________________________
+// тернарный оператор____________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int a = 1;
 //         int b = 2;
@@ -394,7 +394,7 @@
 // оператор switch__________________________
 
 // import java.util.Scanner;
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int a=123;
 //         switch (a) {
@@ -411,9 +411,9 @@
 //         }
 //     }
 // }
-//______________ Циклы_________________________________
-//While____________________________
-// public class program {
+// ______________ Циклы_________________________________
+// While____________________________
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int value = 321;
 //         int count = 0;
@@ -426,9 +426,9 @@
 //     }
 // }
 
-//Do while________________________________
+// Do while________________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         int value = 42100;
 //         int count = 0;
@@ -443,7 +443,7 @@
 
 // for ____________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 
 //         int s = 0;
@@ -456,7 +456,7 @@
 
 // Вложенные циклы_____________________________
 
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         for (int i = 0; i < 5; i++) {
 //             for (int j = 0; j < 5; j++) {
@@ -471,7 +471,7 @@
 // for in
 
 
-// public class program {
+// public class program_01 {
 
 //     public static void main(String[] args) {
 //         int arr[] = new int[] {1,5,8,7,94,4};
@@ -482,12 +482,12 @@
 //     }
 // }
 
-//_________________________Работа с файлами __________________________
-//Создание запись и дозапись_________________________________________
+// _________________________Работа с файлами __________________________
+// Создание запись и дозапись_________________________________________
 
 // import java.io.FileWriter;
 // import java.io.IOException;
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) {
 //         try (FileWriter fw = new FileWriter("file.txt", false)) {
 //             fw.write("line 1");
@@ -501,10 +501,10 @@
 //         }
 //     } }
 
-//Чтение посимвольно__________________________
+// Чтение посимвольно__________________________
 
 // import java.io.*;
-// public class program {
+// public class program_01 {
 //     public static void main(String[] args) throws Exception {
 //         FileReader fr = new FileReader("file.txt");
 //         int c;
