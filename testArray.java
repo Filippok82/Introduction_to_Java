@@ -15,7 +15,7 @@ public class testArray {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите размерность массива: ");
         int sizeArr = in.nextInt();
- 
+        in.close();
         int[] arr = new int[sizeArr];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random()*20-5);
