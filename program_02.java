@@ -256,8 +256,6 @@ import java.io.IOException;
 import java.util.logging.*;
 
 public class program_02 {
-    private static Formatter xml;
-
     public static void main(String[] args) throws IOException {
     
         Logger logger = Logger.getLogger(program_02.class.getName());
