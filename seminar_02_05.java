@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 
 // Задано уравнение вида q + w = e, q, w, e >= 0. 
