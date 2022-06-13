@@ -61,7 +61,7 @@ public class seminar_03_dop {
     // Дан массив целых чисел arr, возврат true тогда и только тогда, когда это
     // допустимый массив гор .
     public static void main(String[] args) {
-        int[] arr = { 1,2,4,5,2,1,0};
+        int[] arr = { 1, 2, 4, 5, 2, 1, 0 };
         System.out.println(validMountainArray(arr));
 
     }
@@ -78,17 +78,17 @@ public class seminar_03_dop {
 
     public static boolean validMountainArray(int[] arr) {
         int i = 0;
-       int j = arr.length - 1;
-       int n = arr.length - 1;
-       while (i + 1 < n && arr[i] < arr[i+1]) {
-           i++;
-       }
+        int j = arr.length - 1;
+        int n = arr.length - 1;
+        while (i + 1 < n && arr[i] < arr[i + 1]) {
+            i++;
+        }
 
-       while (j > 0 && arr[j] < arr[j-1]) {
-           j--;
-       }
+        while (j > 0 && arr[j] < arr[j - 1]) {
+            j--;
+        }
 
-       return (i > 0 && i == j && j < n);
-   }
+        return (i > 0 && i == j && j < n);
+    }
 
 }
