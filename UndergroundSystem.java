@@ -32,9 +32,10 @@ class UndergroundSystem {
 
     public double getAverageTime(String startStation, String endStation) {
         String trip = startStation + ", " + endStation;
-        List<Integer> list = travelMapOut.getOrDefault(trip, new ArrayList<Integer>());
-        if (list.size() == 0)
-            return 0;
+        List<Integer> list = travelMapOut.getOrDefault(trip, new ArrayList<Integer>()); // getOrDefault этот метод
+                                                                                        // должен возвращать
+        if (list.size() == 0) // значение по умолчанию всякий раз, когда значение
+            return 0; // не было найдено с использованием ключа, указанного в HashMap.
         int size = list.size();
         double sum = 0;
         for (int time : list)
@@ -54,7 +55,7 @@ class UndergroundSystem {
         undergroundSystem.getAverageTime("Paradise", "Cambridge"); // return 14.00000. One trip "Paradise" ->
                                                                    // "Cambridge", (14) / 1 = 14
         undergroundSystem.getAverageTime("Leyton", "Waterloo"); // return 11.00000. Two trips "Leyton" -> "Waterloo",
-        // (10 + 12) / 2 = 11
+                                                                // (10 + 12) / 2 = 11
         System.out.println(undergroundSystem.getAverageTime("Leyton", "Waterloo"));
         undergroundSystem.checkIn(10, "Leyton", 24);
         undergroundSystem.getAverageTime("Leyton", "Waterloo"); // return 11.00000
