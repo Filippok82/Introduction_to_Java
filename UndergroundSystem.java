@@ -32,10 +32,9 @@ class UndergroundSystem {
 
     public double getAverageTime(String startStation, String endStation) {
         String trip = startStation + ", " + endStation;
-        List<Integer> list = travelMapOut.getOrDefault(trip, new ArrayList<Integer>()); // getOrDefault этот метод
-                                                                                        // должен возвращать
-        if (list.size() == 0) // значение по умолчанию всякий раз, когда значение
-            return 0; // не было найдено с использованием ключа, указанного в HashMap.
+        List<Integer> list = travelMapOut.getOrDefault(trip, new ArrayList<Integer>()); 
+        if (list.size() == 0) 
+            return 0; 
         int size = list.size();
         double sum = 0;
         for (int time : list)
