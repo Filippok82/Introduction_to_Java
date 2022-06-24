@@ -14,5 +14,6 @@ public class Ex003 {
         deque.pollFirst(); deque.pollLast();
         deque.getFirst(); deque.getLast();
         deque.peekFirst(); deque.peekLast();
+        System.out.println(deque);
     }
 }

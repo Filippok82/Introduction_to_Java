@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class seminar_03_08_version02 {
     static int[][] board;
