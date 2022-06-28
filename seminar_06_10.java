@@ -42,6 +42,7 @@ public class seminar_06_10 {
 
       } else {
         while (!stack.isEmpty() && map.get(stack.peek()) >= map.get(token)) {
+          result.append(stack.pop()).append(" ");
         }
         stack.push(token);
       }
