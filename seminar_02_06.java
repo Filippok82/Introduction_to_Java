@@ -5,11 +5,11 @@ public class seminar_02_06 {
     public static void main(String[] args) {
         int[] a = { 5, 1, 6, 2, 3, 4, 9, 7 };
 
-        gener_arr(a, a.length);
+        mergeSort(a, a.length);
 
     }
 
-    public static void gener_arr(int[] a, int n) {
+    public static void mergeSort(int[] a, int n) {
         if (n < 2) {
             return;
         } else {
@@ -23,8 +23,8 @@ public class seminar_02_06 {
             for (int i = cen; i < n; i++) {
                 arr2[i - cen] = a[i];
             }
-            gener_arr(arr1, cen);
-            gener_arr(arr2, n - cen);
+            mergeSort(arr1, cen);
+            mergeSort(arr2, n - cen);
 
             merge(a, arr1, arr2, cen, n - cen);
 
@@ -42,17 +42,17 @@ public class seminar_02_06 {
                 a[k] = arr1[i];
                 k++;i++;
             } else {
-                a[k] = arr2[j];
-                k++;j++;
+                a[k++] = arr2[j++];
+            
             }
         }
         while (i < left) {
-            a[k] = arr1[i];
-            k++;i++;
+            a[k++] = arr1[i++];
+            
         }
         while (j < right) {
-            a[k] = arr2[j];
-            k++;j++;
+            a[k++] = arr2[j++];
+          
         }
 
     }
