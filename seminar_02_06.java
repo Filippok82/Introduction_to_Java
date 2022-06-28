@@ -39,8 +39,8 @@ public class seminar_02_06 {
         
         while (i < left && j < right) {
             if (arr1[i] <= arr2[j]) {
-                a[k] = arr1[i];
-                k++;i++;
+                a[k++] = arr1[i++];
+                
             } else {
                 a[k++] = arr2[j++];
             
