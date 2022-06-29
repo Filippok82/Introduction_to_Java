@@ -3,36 +3,34 @@ package seminar_05;
 import java.util.Stack;
 
 class MinStack {
-    Stack<Integer> st;
+    Stack<int[]> stack;
 
     public MinStack() {
-        st = new Stack<>();
+        stack = new Stack<>();
     }
 
     public void push(int val) {
-        st.push(val);
+       if(stack.isEmpty()){
+        stack.push(new int []{val,val});
+       } else {
+        int min=val < stack.peek()[1]? val: stack.peek()[1];
+        stack.push(new int[]{val,min});
+       }
     }
-
     public void pop() {
-        st.pop();
+        stack.pop();
 
     }
 
     public int top() {
-        if (st.empty())
-            return -1;
 
-        return st.peek();
+        return stack.peek()[0];
+
+   
     }
 
     public int getMin() {
-        int minEl = Integer.MAX_VALUE;
-        for (int i : st) {
-            if (i < minEl) {
-                minEl = i;
-            }
-        }
-        return minEl;
+        return stack.peek()[1];
     }
 
     public static void main(String[] args) {
@@ -48,6 +46,7 @@ class MinStack {
         minElement.top();
         minElement.getMin();
         minElement.push(-4);
+        minElement.push(-9);
         System.out.println(minElement.getMin());
     }
 }
