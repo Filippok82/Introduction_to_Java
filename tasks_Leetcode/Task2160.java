@@ -23,6 +23,6 @@ public class Task2160 {
     }
 public static void main(String[] args) {
     Task2160 res = new Task2160();
-    System.out.println(res.minimumSum(2932));
+    System.out.println(res.minimumSum(3214));
 }
 }
