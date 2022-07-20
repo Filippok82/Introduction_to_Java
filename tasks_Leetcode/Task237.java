@@ -2,9 +2,9 @@ package tasks_Leetcode;
 
     
     class LinkedList {
-        Node head; // head of list
+        Node head; //голова списка
 
-        /* Linked list Node */
+        /* Узел связанного списка */
         class Node {
             int data;
             Node next;
@@ -21,31 +21,31 @@ package tasks_Leetcode;
          * связанном списке
          */
         void deleteNode(int key) {
-            // Store head node
+            // Головной узел хранилища
             Node temp = head, prev = null;
 
-            // If head node itself holds the key to be deleted
+           // Если сам головной узел содержит ключ, подлежащий удалению
             if (temp != null && temp.data == key) {
-                head = temp.next; // Changed head
+                head = temp.next; //Замена головы
                 return;
             }
 
-            // Search for the key to be deleted, keep track of
-            // the previous node as we need to change temp.next
+           // Поиск ключа для удаления, отслеживание
+        // предыдущего узла, так как нам нужно изменить temp.next
             while (temp != null && temp.data != key) {
                 prev = temp;
                 temp = temp.next;
             }
 
-            // If key was not present in linked list
+            // Если ключ отсутствовал в связанном списке
             if (temp == null)
                 return;
 
-            // Unlink the node from linked list
+            // Отсоединить узел от связанного списка
             prev.next = temp.next;
         }
 
-        /* Inserts a new Node at front of the list. */
+ /* Вставляет новый узел в начало списка. */
         public void push(int new_data) {
             Node new_node = new Node(new_data);
             new_node.next = head;
@@ -53,8 +53,7 @@ package tasks_Leetcode;
         }
 
         /*
-         * This function prints contents of linked list starting
-         * from the given node
+         *Распечатка списка
          */
         public void printList() {
             Node tnode = head;
@@ -64,11 +63,7 @@ package tasks_Leetcode;
             }
         }
 
-        /*
-         * Driver program to test above functions. Ideally this
-         * function should be in a separate user class. It is kept
-         * here to keep code compact
-         */
+        
         public static void main(String[] args) {
 
             LinkedList llist = new LinkedList();
@@ -78,12 +73,12 @@ package tasks_Leetcode;
             llist.push(3);
             llist.push(2);
 
-            System.out.println("Created Linked list is:");
+            System.out.println("Созданный связаныйсписок:");
             llist.printList();
 
             llist.deleteNode(1); // Удалить узел с данными 1
 
-            System.out.println("\nLinked List after Deletion of 1:");
+            System.out.println("\nСвязанный список после удаления 1:");
             llist.printList();
         }
     }
