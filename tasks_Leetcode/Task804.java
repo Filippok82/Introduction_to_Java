@@ -12,7 +12,7 @@ public class Task804 {
         for (String word : words) {
             StringBuilder sb = new StringBuilder();
             for (Character c : word.toCharArray()) {
-                sb.append(morses['a' - c]);
+                sb.append(morses[c-'a']);
             }
             uniqueMorses.add(sb.toString());
         }
@@ -20,7 +20,7 @@ public class Task804 {
     }
 
     public static void main(String[] args) {
-        String[] words = { "red", "get", "had" };
+        String[] words = { "gin","zen","gig","msg" };
         Task804 res = new Task804();
         System.out.println(res.uniqueMorseRepresentations(words));
     }
