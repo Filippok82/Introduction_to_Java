@@ -2,7 +2,7 @@ package tasks_Leetcode;
 
 import java.util.Arrays;
 
-import javax.print.attribute.standard.NumberUpSupported;
+
 
 public class Task1365 {
     public int[] smallerNumbersThanCurrent(int[] nums) {
