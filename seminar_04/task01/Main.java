@@ -9,6 +9,7 @@ class Main {
         Client client1 = new Client("first1", "last1", "01.12.1985", "12345687", "999999999");
 
         client1.getInfoBy(general);
+        
     }
 
 }

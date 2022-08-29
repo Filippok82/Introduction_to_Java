@@ -16,5 +16,6 @@ class Worker {
     }
     public Status getStatus(){
         return this.status;
+        
     }
 }
