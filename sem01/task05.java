@@ -8,7 +8,7 @@ import java.util.List;
 public class task05 {
 
     public static void main(String[] args) {
-        Integer[] a = new Integer[] {1, null, 3, 4, null, 6};
+        /*Integer[] a = new Integer[] {1, null, 3, 4, null, 6};*/
 
 
     }
