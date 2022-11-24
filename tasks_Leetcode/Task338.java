@@ -11,9 +11,9 @@ class Task338 {
         }
         return arr;
     }
-public static void main(String[] args) {
-    Task338 res = new Task338();
-    System.out.println(Arrays.toString(res.countBits(5)))
-        ;
-}
+
+    public static void main(String[] args) {
+        Task338 res = new Task338();
+        System.out.println(Arrays.toString(res.countBits(5)));
+    }
 }
