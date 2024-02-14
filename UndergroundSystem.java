@@ -3,6 +3,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//Система метрополитена отслеживает время в пути клиентов между различными станциями.
+// Они используют эти данные для расчета среднего времени, необходимого
+// для перехода от одной станции к другой.
+
 class UndergroundSystem {
     Map<Integer, String> travelMapIn;
     Map<String, List<Integer>> travelMapOut;
